@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — [Lisdi]</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">[Lisdi]</div>
+    <nav>
+    <button id="modeToggle" class="mode-btn" aria-label="Toggle Dark Mode">🌙</button>
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#projects" class="nav-link">Projek</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <img src="img/aku.jpg" alt="Foto Profil" class="profile-img" id="profileImg">
+      </div>
+      <div class="hero-right">
+        <h1>Hallo! Saya <span class="accent">Lis Diana Putri</span></h1>
+        <p class="lead">Mahasiswa Teknik Informatika</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">Lihat Projek</a>
+          <a href="#contact" class="btn ghost">Hubungi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah pelajar yang tertarik pada dunia teknologi dan pengembangan perangkat lunak.
+        Saya menyukai pemrograman, dan pengembangan web. Saya suka mempelajari hal baru, membuat
+        project sederhana, dan terus mengembangkan kemampuan saya melalui praktik langsung.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projek Saya</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Website Portofolio</h3>
+          <p>Sebuah website portofolio satu halaman dibuat menggunakan HTML, CSS, dan JavaScript untuk menampilkan profil dan projek.</p>
+          <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+          <a href=""></a>
+        </article>
+
+        <article class="project-card">
+          <h3>Kalkulator Python (CLI)</h3>
+          <p>Program kalkulator berbasis console yang mendukung operasi tambah, kurang, kali, dan bagi. Cocok sebagai latihan dasar pemrograman Python.</p>
+          <p><strong>Teknologi:</strong> Python</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Sistem Login Sederhana (Python)</h3>
+          <p>Sistem login dengan validasi username/password sederhana menggunakan struktur data Python (dictionary). Berguna untuk mempelajari percabangan dan flow program.</p>
+          <p><strong>Teknologi:</strong> Python</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Program Konversi Suhu (Python)</h3>
+          <p>Aplikasi kecil untuk mengkonversi suhu Celsius ↔ Fahrenheit ↔ Kelvin, menerima input user dan menampilkan hasil secara interaktif.</p>
+          <p><strong>Teknologi:</strong> Python</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Kontak</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Pesan..." required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+      <p class="muted">
+        Atau hubungi saya di: 
+      <br>
+      <a href="https://www.instagram.com/_didislepett?igsh=MXVmdm13OWNzYjhpMw==" target="_blank" class="ig_link">
+        <img src="img/instagram-app.jpg" alt="instagram" class="ig-icon"> @_didislepett
+      </a>
+    </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <small>© 2025 LISDI. All rights reserved.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
